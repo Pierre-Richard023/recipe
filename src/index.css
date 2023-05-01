@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.unwanted::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0.5em;
+    height: 100%;
+    margin-left: -0.25em;
+    background: #94a3b8;
+    transform: rotate(-45deg);
+    opacity: .5;
+    transition: background-color 400ms ease;
+}
+
+.unwanted:hover::before{
+    opacity: .8;
+}
+
+.unwanted-check::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0.5em;
+    height: 100%;
+    margin-left: -0.25em;
+    background: #059669;
+    transform: rotate(-45deg);
+    opacity: .8;
+    transition: background-color 400ms ease;
+}
+
